@@ -1,5 +1,5 @@
-c gfortran -fcheck=all -ffixed-form -fbacktrace -L/usr/lib64/nvidia -lOpenCL -o sum sum.f
-c srun --gres=gpu ./sum
+c gfortran -fcheck=all -ffixed-form -fbacktrace -L/usr/lib64/nvidia-bumblebee -lOpenCL -o sum sum.f90
+c primusrun ./sum
 c
 c uses module clfortran.mod
 c
